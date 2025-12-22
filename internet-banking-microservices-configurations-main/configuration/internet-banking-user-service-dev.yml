@@ -1,0 +1,39 @@
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.1.5:3306/banking_core_user_service
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+server:
+  port: 8083
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+  zipkin:
+    tracing:
+      endpoint: http://192.168.1.5:9411/api/v2/spans    
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.1.5:8081/eureka
+
+
+info:
+  app:
+    name: ${spring.application.name}
+
+app:
+  config:
+    keycloak:
+      server-url: http://192.168.1.5:8080
+      realm: javatodev-internet-banking
+      clientId: javatodev-internet-banking-kc-api-client
+      client-secret: koS4tPpw5xPqMX2cczBOmkWJIon7Ju3D
+  feign:
+    client:
+      core-banking: core-banking-service
