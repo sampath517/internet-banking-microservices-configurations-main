@@ -16,12 +16,12 @@ management:
       probability: 1.0
   zipkin:
     tracing:
-      endpoint: http://192.168.1.5:9411/api/v2/spans    
+      endpoint: http://172.17.128.1:9411/api/v2/spans    
 
 eureka:
   client:
     service-url:
-      defaultZone: http://192.168.1.5:8081/eureka
+      defaultZone: http://172.17.128.1:8081/eureka
 
 
 info:
@@ -31,7 +31,7 @@ info:
 app:
   config:
     keycloak:
-      server-url: http://192.168.1.5:8080
+      server-url: http://172.17.128.1:8080
       realm: javatodev-internet-banking
       clientId: javatodev-internet-banking-kc-api-client
       client-secret: koS4tPpw5xPqMX2cczBOmkWJIon7Ju3D
