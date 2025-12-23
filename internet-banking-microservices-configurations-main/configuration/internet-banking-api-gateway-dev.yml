@@ -43,7 +43,7 @@ spring:
 app:
   config:
     keycloak:
-      url: http://192.168.1.5:8080
+      url: http://172.17.128.1:8080
       realm: javatodev-internet-banking
 
 management:
@@ -52,7 +52,7 @@ management:
       probability: 1.0
   zipkin:
     tracing:
-      endpoint: http://192.168.1.5:9411/api/v2/spans    
+      endpoint: http://172.17.128.1:9411/api/v2/spans    
 
 server:
   port: 8082
@@ -60,7 +60,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://192.168.1.5:8081/eureka
+      defaultZone: http://172.17.128.1:8081/eureka
     fetch-registry: true
     register-with-eureka: true
   instance:
