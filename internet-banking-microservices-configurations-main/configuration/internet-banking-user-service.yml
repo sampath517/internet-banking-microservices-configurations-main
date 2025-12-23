@@ -1,8 +1,10 @@
 spring:
   datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/banking_core_user_service
     username: javatodev_development
     password: oPItyPticIAt
+    
   jpa:
     hibernate:
       ddl-auto: update
