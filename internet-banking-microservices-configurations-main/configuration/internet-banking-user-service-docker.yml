@@ -1,5 +1,6 @@
 spring:
   datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://mysql_core_db:3306/banking_core_user_service
     username: javatodev_development
     password: oPItyPticIAt
@@ -21,7 +22,7 @@ management:
       probability: 1.0
   zipkin:
     tracing:
-      endpoint: http://172.25.0.12:9411/api/v2/spans
+      endpoint: http://172.17.128.1:9411/api/v2/spans
 
 info:
   app:
@@ -30,7 +31,7 @@ info:
 app:
   config:
     keycloak:
-      server-url: http://172.25.0.11:8080
+      server-url: http://172.17.128.1:8080
       realm: javatodev-internet-banking
       clientId: javatodev-internet-banking-kc-api-client
       client-secret: koS4tPpw5xPqMX2cczBOmkWJIon7Ju3D
