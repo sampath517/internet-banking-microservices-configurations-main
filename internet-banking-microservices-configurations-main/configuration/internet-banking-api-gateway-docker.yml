@@ -43,7 +43,7 @@ spring:
 app:
   config:
     keycloak:
-      url: http://172.25.0.11:8080
+      url: http://172.17.128.1:8080
       realm: javatodev-internet-banking
 
 management:
@@ -52,7 +52,7 @@ management:
       probability: 1.0
   zipkin:
     tracing:
-      endpoint: http://172.25.0.12:9411/api/v2/spans
+      endpoint: http://172.17.128.1:9411/api/v2/spans
 
 server:
   port: 8082
