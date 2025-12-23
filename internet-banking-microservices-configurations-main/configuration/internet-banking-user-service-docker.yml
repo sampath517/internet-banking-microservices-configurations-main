@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: jdbc:mysql://mysql_core_db:3306/banking_core_user_service
-    username: root
-    password: root
+    username: javatodev_development
+    password: oPItyPticIAt
   jpa:
     hibernate:
       ddl-auto: update
