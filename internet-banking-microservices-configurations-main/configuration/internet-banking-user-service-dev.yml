@@ -1,6 +1,7 @@
 spring:
   datasource:
-    url: jdbc:mysql://192.168.1.5:3306/banking_core_user_service
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://172.17.128.1:3306/banking_core_user_service
     username: javatodev_development
     password: oPItyPticIAt
   jpa:
