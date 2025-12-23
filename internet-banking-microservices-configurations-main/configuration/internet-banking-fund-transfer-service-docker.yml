@@ -4,8 +4,8 @@ server:
 spring:
   datasource:
     url: jdbc:mysql://mysql_core_db:3306/banking_core_fund_transfer_service
-    username: root
-    password: root
+    username: javatodev_development
+    password: oPItyPticIAt
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
