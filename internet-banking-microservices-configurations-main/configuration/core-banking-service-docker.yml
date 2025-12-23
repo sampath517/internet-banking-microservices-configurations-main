@@ -13,7 +13,7 @@ management:
       probability: 1.0
   zipkin:
     tracing:
-      endpoint: http://172.25.0.12:9411/api/v2/spans    
+      endpoint: http://172.17.128.1:9411/api/v2/spans    
 
 server:
   port: 8092
